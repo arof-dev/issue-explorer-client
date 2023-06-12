@@ -1,3 +1,5 @@
+import s from './IssuesSearch.module.scss';
+
 export interface IssuesSearchProps {
   username: string;
   repo: string;
@@ -14,7 +16,7 @@ const IssuesSearch = ({
   onSubmit,
 }: IssuesSearchProps) => {
   return (
-    <div>
+    <div className={s.searchForm}>
       <input value={username} onChange={(e) => setUsername(e.target.value)} />
       <input value={repo} onChange={(e) => setRepo(e.target.value)} />
       <button onClick={onSubmit}>Найти</button>
