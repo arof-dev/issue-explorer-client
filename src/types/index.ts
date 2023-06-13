@@ -28,6 +28,7 @@ export interface Issue {
   timeline_url: string;
   performed_via_github_app: null;
   state_reason: null | string;
+  labels: Label[];
 }
 
 export interface User {
@@ -80,4 +81,16 @@ export interface Reactions {
   eyes: number;
 }
 
+export interface Label {
+  name: string;
+  color: string;
+}
+
 export type State = 'open';
+
+export interface Logs {
+  _id: string;
+  ip: string;
+  datetime: string;
+  method: 'getIssues' | 'getIssuesCount' | 'getIssue';
+}
