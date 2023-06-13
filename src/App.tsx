@@ -29,7 +29,7 @@ const App = () => {
         <div className={s.container}>
           <Navbar>
             <Navbar.Content>
-              <Navbar.Link>Issues</Navbar.Link>
+              <Navbar.Link href={'/'}>Issues</Navbar.Link>
               <Navbar.Link href={'/logs'}>Logs</Navbar.Link>
             </Navbar.Content>
           </Navbar>
