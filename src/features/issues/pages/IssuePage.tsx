@@ -10,7 +10,6 @@ const IssuePage = () => {
     repo: repo as string,
     number: Number(number as string),
   });
-  console.log(issue);
 
   if (!issue && !isLoading) {
     return <Text size={36}>Issue not found</Text>;
